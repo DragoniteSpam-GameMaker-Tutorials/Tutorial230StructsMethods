@@ -1,0 +1,2 @@
+draw_text(160, 160, "Name: " + item_sword.name + ", price: " + string(item_sword.price) + ", description: " + item_sword.description);
+draw_text(160, 192, "Name: " + item_pizza.name + ", price: " + string(item_pizza.price) + ", description: " + item_pizza.description);
