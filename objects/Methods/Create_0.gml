@@ -7,6 +7,7 @@ function Animal(_x, _y) constructor {
     hp = 1;
     
     method_step = function() {
+        // struct instances have their own scope
         x += 2 * dcos(t);
         y -= 2 * dsin(t);
         t += 2;
@@ -33,6 +34,8 @@ function Animal(_x, _y) constructor {
         hp += _amount;
     }
     
+    // if you want to call a struct instance's method in the constructor,
+    // they must be already defined in the code
     method_heal(10);
 }
 
